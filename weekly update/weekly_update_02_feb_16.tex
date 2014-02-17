@@ -1,0 +1,605 @@
+
+
+
+% Header, overrides base
+
+    % Make sure that the sphinx doc style knows who it inherits from.
+    \def\sphinxdocclass{article}
+
+    % Declare the document class
+    \documentclass[letterpaper,10pt,english]{/anaconda/lib/python2.7/site-packages/sphinx/texinputs/sphinxhowto}
+
+    % Imports
+    \usepackage[utf8]{inputenc}
+    \DeclareUnicodeCharacter{00A0}{\\nobreakspace}
+    \usepackage[T1]{fontenc}
+    \usepackage{babel}
+    \usepackage{times}
+    \usepackage{import}
+    \usepackage[Bjarne]{/anaconda/lib/python2.7/site-packages/sphinx/texinputs/fncychap}
+    \usepackage{longtable}
+    \usepackage{/anaconda/lib/python2.7/site-packages/sphinx/texinputs/sphinx}
+    \usepackage{multirow}
+
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{ucs}
+    \usepackage{enumerate}
+
+    % Used to make the Input/Output rules follow around the contents.
+    \usepackage{needspace}
+
+    % Pygments requirements
+    \usepackage{fancyvrb}
+    \usepackage{color}
+    % ansi colors additions
+    \definecolor{darkgreen}{rgb}{.12,.54,.11}
+    \definecolor{lightgray}{gray}{.95}
+    \definecolor{brown}{rgb}{0.54,0.27,0.07}
+    \definecolor{purple}{rgb}{0.5,0.0,0.5}
+    \definecolor{darkgray}{gray}{0.25}
+    \definecolor{lightred}{rgb}{1.0,0.39,0.28}
+    \definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+    \definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+    \definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+    \definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+
+    % Needed to box output/input
+    \usepackage{tikz}
+        \usetikzlibrary{calc,arrows,shadows}
+    \usepackage[framemethod=tikz]{mdframed}
+
+    \usepackage{alltt}
+
+    % Used to load and display graphics
+    \usepackage{graphicx}
+    \graphicspath{ {figs/} }
+    \usepackage[Export]{adjustbox} % To resize
+
+    % used so that images for notebooks which have spaces in the name can still be included
+    \usepackage{grffile}
+
+
+    % For formatting output while also word wrapping.
+    \usepackage{listings}
+    \lstset{breaklines=true}
+    \lstset{basicstyle=\small\ttfamily}
+    \def\smaller{\fontsize{9.5pt}{9.5pt}\selectfont}
+
+    %Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    %Set pygments styles if needed...
+    
+        \definecolor{nbframe-border}{rgb}{0.867,0.867,0.867}
+        \definecolor{nbframe-bg}{rgb}{0.969,0.969,0.969}
+        \definecolor{nbframe-in-prompt}{rgb}{0.0,0.0,0.502}
+        \definecolor{nbframe-out-prompt}{rgb}{0.545,0.0,0.0}
+
+        \newenvironment{ColorVerbatim}
+        {\begin{mdframed}[%
+            roundcorner=1.0pt, %
+            backgroundcolor=nbframe-bg, %
+            userdefinedwidth=1\linewidth, %
+            leftmargin=0.1\linewidth, %
+            innerleftmargin=0pt, %
+            innerrightmargin=0pt, %
+            linecolor=nbframe-border, %
+            linewidth=1pt, %
+            usetwoside=false, %
+            everyline=true, %
+            innerlinewidth=3pt, %
+            innerlinecolor=nbframe-bg, %
+            middlelinewidth=1pt, %
+            middlelinecolor=nbframe-bg, %
+            outerlinewidth=0.5pt, %
+            outerlinecolor=nbframe-border, %
+            needspace=0pt
+        ]}
+        {\end{mdframed}}
+        
+        \newenvironment{InvisibleVerbatim}
+        {\begin{mdframed}[leftmargin=0.1\linewidth,innerleftmargin=3pt,innerrightmargin=3pt, userdefinedwidth=1\linewidth, linewidth=0pt, linecolor=white, usetwoside=false]}
+        {\end{mdframed}}
+
+        \renewenvironment{Verbatim}[1][\unskip]
+        {\begin{alltt}\smaller}
+        {\end{alltt}}
+    
+
+    % Help prevent overflowing lines due to urls and other hard-to-break 
+    % entities.  This doesn't catch everything...
+    \sloppy
+
+    % Document level variables
+    \title{weekly\_update\_02\_feb\_16}
+    \date{February 17, 2014}
+    \release{}
+    \author{Christian Carmona}
+    \renewcommand{\releasename}{}
+
+    % TODO: Add option for the user to specify a logo for his/her export.
+    \newcommand{\sphinxlogo}{}
+
+    % Make the index page of the document.
+    \makeindex
+
+    % Import sphinx document type specifics.
+     
+
+
+% Body
+
+    % Start of the document
+    \begin{document}
+
+        
+            \maketitle
+        
+
+        
+
+
+        
+        \part{Weekly update 02: feb 10 - feb 16, 2014}I dedicated this week to analyze different models for the term structure
+of interest rates, identifying the market and academic standards for
+quoting interest rates, and coding two functions: 1) for obtaining spot
+(zero-coupon) rates from yield to maturity, and 2) for pricing bonds
+given a of zero-coupon yield curve.
+
+\textbf{Note on coding language:} I decided to use R as the main coding
+language. The reason for this is that my research is widely applicable
+to the functions carried by the International Reserve Division in the
+Central Bank of Mexico, my current employer, and they use R as the main
+software for data analysis. However, If it is necessary to create
+equivalent functions in Python to cover course objectives, I am open to
+translate all my developed code.
+
+The main inputs of portfolio selection models are the expected values
+and covariances of the assets under consideration. In the case of
+fixed-income portfolios, the prices of the instruments are function of
+the interest rates observed in the market. Therefore, a theoretical
+model for the evolution of bond prices over time is needed.\section{Term Structure of interest rate}The \emph{term structure of interest rates} at a given time is the
+functional relationship between spot interest rates and term to maturity
+{[}Wilhelm, 1995{]}.
+
+For the term structure to be observable in the market, zero-coupon bonds
+of different maturities must trade. In reality, only zero-coupon bonds
+of very few maturities (typically smaller than a year) trade. But an
+abundance of traded coupon bonds exist in the fixed income markets.
+Coupon bonds can be thought of as portfolios of zero-coupon bonds.
+Hence, only specific portfolios of zero-coupon bonds trade.
+
+The problem is then to extract individual zero-coupon prices from the
+prices of particular portfolios of zero-coupon bonds. From these
+(theoretical) zero-coupon bond prices the corresponding spot rates can
+then be calculated.
+
+Common alternatives for extracting Yield Curves from Bond Prices
+{[}Munk, 2011{]}:
+
+Bootstrapping
+
+Cubic Spline
+
+The Nelson-Siegel parametrization
+
+\textbf{Market quoting for bond prices}
+
+Consider that we can observe two types of bonds in the market: 1)
+zero-coupon bonds with maturity of at most ne year, 2) Coupon with
+semi-annual coupons payments with maturities ranging from 0 to 30 years.
+
+Denote $z_t$: t-year continuously compounding interest rate. The price
+at time t, for a bond maturing at time T with a face value of \$1 is:
+
+For zero-coupon bonds:
+
+\[ B_t = e^{-t * z_t}\]
+
+For coupon bonds:
+
+\[ P_t = c \sum\limits_{t_i} e^{-t_i * z_{t_i}} + e^{-t * z_t} = c \sum\limits_{t_i} B_{t_i} + B_{t} \]
+
+where: $c$: coupon-rate, and $t_i$: time of coupon payments;
+$0 < t_i \leq t$
+
+However, the market standard for quoting prices of these instruments are
+not their prices, neither the zero-coupon rates.
+
+In the following, we examine the case of US governments bonds. In
+practive, we will find the following:
+
+For zero-coupon bonds (T-bills), the quotes yield is the following
+``adjusted discount rate'':
+
+$d_t = \frac{1-B_t}{B_t}*\frac{365}{t}$
+
+For coupon bonds (T-notes), the quote is the yield to maturity of the
+bond, i.e.~the rate $y_t$ such that the current price of the bond is
+equal to present value of the cashflows discounted with that same rate:
+
+$y_t$ is such that:
+$P_t = c \sum\limits_{t_i} e^{-t_i * y_t} + e^{-t * y_t}$
+
+If we have the quotes for $d_t$ and $y_t$, we can easily obtain the
+prices of the bonds: $B_t$ and $P_t$, and then calculate the spot rates
+using one of the three aforementioned methods.
+
+\begin{center}\rule{3in}{0.4pt}\end{center}
+
+\textbf{Bootstrapping}
+
+This method is an iterative procedure for getting spot rates from given
+prices of coupon bonds.
+
+Suppose we have the following prices: $B_{0.5}$, $B_{1}$, $P_{1.5}$,
+$P_{2}$, $P_{2.5}$, $P_{3}$, \ldots{}.
+
+It is easy to get spot rates from zero-coupon bonds by:
+
+$z_t = -t * log(B_t)$
+
+for $t=0.5$ and $t=1$, we can directly obtain $z_{0.5}$ and $z_{1}$.
+
+For $t=1.5$, we can use $P_{1.5}$ and get $B_{1.5}$ from the expression:
+\[ P_{1.5} = c * (B_{0.5}+B_{1}+B_{1.5}) + B_{1.5}\] then,
+\[ B_{1.5} = \frac{1}{1+c} * ( P_{1.5} - c * (B_{0.5}+B_{1})) \] which
+is a zero-coupon bond, from which we can get $z_{1.5}$
+
+this algorithm is repeated for t=\{ 1.5, 2, 2.5, 3, \ldots{} \}
+
+\begin{center}\rule{3in}{0.4pt}\end{center}
+
+\textbf{Cubic Spline} {[}McCulloch, 1975{]}
+
+This method adjust a fuction $\bar{B}(t)$ to obtain the values of the
+discount factors for all times $t$,
+
+Divide the time domain into intervals defined by the ``knot points''
+$0 = \tau_{0} \leq \tau_{1} \leq ... \leq \tau_{k}$
+
+The spline approximation of the discount function is given by:
+\[\bar{B}(t)=\sum\limits_{j=0}^{k-1} G_j(t) I_j(t)\]
+
+where the $G_j(t)$'s are basis functions and the $I_j(t)$'s are step
+functions:
+\[I_j(t) = \begin{cases} 0 & \mbox{if } t \geq \tau_j \\ 1 & \mbox{otherwise } \end{cases}\]
+
+Hence:
+\[\bar{B}(t) = \begin{cases} G_{0}(t) & \mbox{for } t \in[\tau_0,\tau_1) \\ G_{0}(t)+G_{1}(t) & \mbox{for } t \in[\tau_1,\tau_2) \\ ... & ... \\ G_{0}(t)+G_{1}(t)+...+G_{k-1}(t) & \mbox{for } t \geq \tau_{k-1} \\ \end{cases}\]
+
+We demand that the $G_j(t)$'s are continuous, differentiable and ensure
+a smooth transition in the knot points.
+
+This approach use a cubic polinomial spline:
+\[ G_j(t) = \alpha_j + \beta_j (t-\tau_j) + \gamma_j (t-\tau_j)^2 + \delta_j (t-\tau_j)^3 \]
+where $\alpha_j, \beta_j, \gamma_j, \delta_j$ are constants.
+
+The smooth transition demand continuity in the function and its two
+derivatives: \[\bar{B}(\tau_1-)=\bar{B}(\tau_1+)\]
+\[\bar{B}'(\tau_1-)=\bar{B}'(\tau_1+)\]
+\[\bar{B}''(\tau_1-)=\bar{B}''(\tau_1+)\]
+
+with these assumptions, we can derive some of the constants, reducing
+the expression to:
+\[\bar{B}(t)=1+\beta_0 t + \gamma_0 t^2 + \delta_0 t^3 + \sum\limits_{j=1}^{k-1} \delta_j (t-\tau_j)^3 I_j(t) \]
+
+To obtain the remaining constants, we adjust a linear model using the
+observed prices of bonds $B_t$ and $P_t$
+\[ P_t = c \sum\limits_{0< t_i \leq t } \bar{B}(t_i) + \bar{B}(t) + \epsilon_t \]
+
+\begin{center}\rule{3in}{0.4pt}\end{center}
+
+\textbf{The Nelson-Siegel parametrization} {[}Nelson and Siegel, 1987{]}
+
+This approach is based on a parametrization on the structure of the
+forward rates:
+\[ \bar{f}(t)=\beta_0+\beta_1 e^{-t/\theta}+\beta_2\frac{t}{\theta}e^{-t/\theta} \]
+where $\beta_0,\beta_1,\beta_2,\theta$ are constants to be estimated and
+apply for all maturities.
+
+Then, the term structure of zero-coupon rates is given by:
+\[ \bar{z}_t = \frac{1}{t} \int\limits_{0}^{t} \bar{f}(u) = \beta_0+\beta_1 \frac{ 1- e^{-t/\theta} }{t/\theta} + \beta_2 (\frac{1-e^{-t/\theta}}{t/\theta}-e^{-t/\theta}) \]
+
+which we can rewrite as:
+\[ \bar{z}_t = a + b \frac{ 1- e^{-t/\theta} }{t/\theta} + c e^{-t/\theta} \]
+
+the parameters $a,b,c$ are obtained using the observed prices $B_t$ for
+short terms using fitting a linear model:
+
+\[ z_{t_i} = a + b \frac{ 1- e^{-t_i/\theta} }{t_i/\theta} + c e^{-t_i/\theta} + \epsilon_i\]
+
+and for the coupon bonds, the expression is slightly more complicated
+and requires the use of Generalized Linear Models, because it is not
+linear in the unknown parameters.\section{Model Selection for my project}I decided to adopt \textbf{Bootstrapping method} for modeling the term
+structure in my project in view of the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Bootstrapping is a widely used methodology among practitioners
+\item
+  The underlying assumptions to get zero-coupon rates are consistent
+  with the non-arbitrage criteria
+\item
+  For cubic spline, the value of the discount function for some
+  maturities can often be determined by pure no-arbitrage arguments as
+  utilized in the bootstrapping approach. The discount function
+  estimated with cubic splines will not necessarily match those values
+  so applications of the estimated function will not respect the
+  fundamental no-arbitrage pricing principle.
+\item
+  For cubic spline, there is no guarantee whatsoever that the discount
+  function estimated using cubic splines has an economically credible
+  form. In particular, the discount function should be positive and
+  decreasing (which will ensure positive forward rates), but there is
+  nothing in the approach ensuring that.
+\item
+  For cubic and Nelson-Siegel, small variations in the input bond prices
+  may have a substantial effect on the estimated discount function and
+  yield curve. In particular, a change in the input price of a
+  short-maturity bond may even affect the long-maturity end of the
+  estimated curves.
+\item
+  For Nelson-Siegel, the necessity of incorporate estimation by
+  Generalized Linear Models is way more complicated and computationally
+  expensive.
+\item
+  For Nelson-Siegel, the slope and the curvature factors decay rapidly
+  to zero as the maturity increases. Hence, it is difficult to fit
+  medium- and long-term yields. An additional curvature term can be
+  added to reduce this problem, but the complexity in the model is
+  increased even more.
+\end{enumerate}\section{Coding}I developed the following two fuctions in R for implementing
+Bootstrapping method using historical real data\begin{verbatim}
+##################################################
+
+interpolation <- function( x, fx, x_new, method=c("linear","exp","log","spline")[1] ) {
+  # This function obtain the interpolated values in x_new
+  # For a given a set of points (x,fx)
+  
+  
+  x_new_bucket <- rep(1,length(x_new))
+  for( i in seq(x) ) {
+    x_new_bucket <- ifelse(x_new>x[i], i+1, x_new_bucket)
+  }
+  x_new_bucket <- ifelse(x_new==x[1], 2, x_new_bucket)
+  temp <- !is.element(x_new_bucket,c(1,length(x)+1))
+  fx_new <- as.numeric(NULL)
+  if(method=="linear") {
+    # Smoothing via "Linear interpolation"
+    w <- rep(NA,length(x_new))
+    w[temp] <- (x[x_new_bucket[temp]]-x_new[temp]) / (x[x_new_bucket[temp]] - x[x_new_bucket[temp]-1])
+    fx_new <- rep(NA,length(x_new))
+    fx_new[temp] <- fx[x_new_bucket[temp]-1] * w[temp] + fx[x_new_bucket[temp]] * (1-w[temp])
+  }
+  if(method=="exp") {
+    # Smoothing via "exponential interpolation"
+    w <- rep(NA,length(x_new))
+    w[temp] <- (x[x_new_bucket[temp]]-x_new[temp]) / (x[x_new_bucket[temp]] - x[x_new_bucket[temp]-1])
+    fx_new[temp] <- log( exp(fx[x_new_bucket[temp]-1]) * w[temp] + exp(fx[x_new_bucket[temp]]) * (1-w[temp]) )
+  }
+  if(method=="log") {
+    # Smoothing via "Logarithmic interpolation"
+    w <- rep(NA,length(x_new))
+    w[temp] <- (x[x_new_bucket[temp]]-x_new[temp]) / (x[x_new_bucket[temp]] - x[x_new_bucket[temp]-1])
+    #fx_new[temp] <- exp( log(fx[x_new_bucket[temp]-1]) * w[temp] + log(fx[x_new_bucket[temp]]) * (1-w[temp]) )
+    fx_new[temp] <- fx[x_new_bucket[temp]-1]^w[temp] * fx[x_new_bucket[temp]]^(1-w[temp])
+  }
+  if(method=="spline") {
+    # Smoothing via "Smoothing spline"
+    smooth_model <- smooth.spline(cbind(x,fx))
+    fx_new <- predict(smooth_model,x_new)$y
+  }
+  return(fx_new)
+}
+
+##################################################
+
+##################################################
+
+zero_from_yield_bootstrap <- function ( nodes, ytm_curve, smooth=c("linear","exp","log","spline")[2] ) {
+  # Function to calculate zero-coupon rates, z_t, using bootstrapping
+  # using data acording to market quotes, y_t
+  #   for t > 1 year: anualized yield to maturity for bonds paying semiannual coupons
+  #   fot t <=1 year: adjusted discount rate, i.e. ((100-P)/P)*(365/days to maturity)
+  # the output rate will be annual and continuosly compounded
+  
+  # Input:
+  #   ytm_curve: a numeric vector with yields in the market standard
+  #   nodes: a numeric  vector with the terms of ytm_curve in years
+  # Output
+  #   zero_curve_boot :a numeric vector with the corresponding zero-coupon yields
+  
+  ytm_curve <- as.numeric(ytm_curve)
+  
+  nodes_t <- as.numeric(substr( nodes , 1, nchar(nodes)-1 ))
+  nodes_t[substr( nodes , nchar(nodes), nchar(nodes) )=="m"] <- nodes_t[substr( nodes , nchar(nodes), nchar(nodes) )=="m"]/12
+  if(!all(nodes_t==sort(nodes_t,decreasing=F))) {
+    stop("Introduced values have to be increasing with respect to 'nodes'")
+  }
+  
+  # Get rid of NA's
+  nodes_orig_t <- nodes_t
+  nodes <- nodes[!is.na(ytm_curve)]
+  nodes_t <- nodes_t[!is.na(ytm_curve)]
+  ytm_curve <- ytm_curve[!is.na(ytm_curve)]
+  
+  # Validates that the vector has first, last and one additional node.
+  if(
+    !( all( is.element( nodes_orig_t[c(1,length(nodes_orig_t))] , nodes_t[c(1,length(nodes_t))] ) ) & length(nodes)>3 )
+  ) { return( rep(NA,length(nodes_orig_t)) ) }
+  
+  # Interpolation of values in the input yields for terms that are not specified but needed in the algorithm
+  ytm_pred_t <- sort(unique( c( nodes_t, seq(0.5,max(nodes_t),0.5) ) ))
+  ytm_pred <- interpolation(x=nodes_t,fx=ytm_curve,x_new=ytm_pred_t,method=smooth)
+
+  # Validates that the interpolations does not give negative values
+  if(any(ytm_pred<0)) { stop("The interpolation method is calculating negatives yields") }
+  
+  # Zero-coupon yield calculation via bootstrappping
+  # Assumptions:
+  # 1) Quotation according to market stndards:
+  #   1.1) for t<=1 instruments are zero-coupon bonds
+  zero_curve_boot <- ytm_pred
+  zero_curve_boot[ytm_pred_t<=1] <- ( 1 + ytm_pred[ytm_pred_t<=1] * ytm_pred_t[ytm_pred_t<=1] ) ^ (1/ytm_pred_t[ytm_pred_t<=1])-1
+  zero_curve_boot[ytm_pred_t>1] <- NA
+  #   validation
+  if( any(round( ( (1+ytm_pred[ytm_pred_t<=1]*ytm_pred_t[ytm_pred_t<=1])^(-1) ) - ( (1+zero_curve_boot[ytm_pred_t<=1])^(-ytm_pred_t[ytm_pred_t<=1]) ) , 12 ) >0) ) {
+    stop("Zero-coupon rates were not calculated correctly for terms t<=1")
+  }
+  
+  #   1.2) for t>1 instruments are coupon bonds, with payments at: 0.5, 1, 1.5, 2, 2.5,...
+  # ytm are nominales semi-anually compounded
+  node_coupon <- is.element(ytm_pred_t,seq(0.5,max(ytm_pred_t),0.5))
+  
+  for( node_i in ytm_pred_t[ytm_pred_t>1] ) {
+    
+    ytm_i <- ytm_pred[match(node_i,ytm_pred_t)]
+    
+    # cupon rate that makes bond price=100
+    cpn_i <- ytm_i/2
+    
+    # zero-rate for node_i
+    zero_curve_boot[match(node_i,ytm_pred_t)] <-    
+      ( ( 1-cpn_i*sum( ( 1 + zero_curve_boot[node_coupon & (ytm_pred_t<node_i)] )^(-ytm_pred_t[node_coupon & (ytm_pred_t<node_i)]) ) ) / ( 1+cpn_i ) )^(-1/node_i) - 1
+    
+    # Validation
+    if( 100 != round( sum(100*cpn_i*(1+zero_curve_boot[node_coupon & (ytm_pred_t<=node_i)])^( -ytm_pred_t[node_coupon & (ytm_pred_t<=node_i)] ) ) + 100*(1+zero_curve_boot[ytm_pred_t==node_i])^-ytm_pred_t[ytm_pred_t==node_i] ,12) ) {
+      stop("Zero-coupon rates were not calculated correctly for terms t>1")
+    }
+    #plot(zero_curve_boot,pch=20,col=2)
+    #points(ytm_pred,pch=20,col=4)
+    #legend("top",c("zero","ytm"),col=c(2,4),pch=19)
+    
+  }
+  
+  return( zero_curve_boot[match(nodes_orig_t,ytm_pred_t)] )
+}
+
+##################################################
+\end{verbatim}
+
+    % Make sure that atleast 4 lines are below the HR
+    \needspace{4\baselineskip}
+
+    
+        \vspace{6pt}
+        \makebox[0.1\linewidth]{\smaller\hfill\tt\color{nbframe-in-prompt}In\hspace{4pt}{[}{]}:\hspace{4pt}}\\*
+        \vspace{-2.65\baselineskip}
+        \begin{ColorVerbatim}
+            \vspace{-0.7\baselineskip}
+            \begin{Verbatim}[commandchars=\\\{\}]
+
+\end{Verbatim}
+
+            
+                \vspace{0.3\baselineskip}
+            
+        \end{ColorVerbatim}
+    
+
+        
+
+        \renewcommand{\indexname}{Index}
+        \printindex
+
+    % End of document
+    \end{document}
+
+
