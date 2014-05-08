@@ -1,0 +1,15 @@
+<class 'pandas.core.frame.DataFrame'>
+DatetimeIndex: 2327 entries, 2005-01-03 00:00:00 to 2014-04-16 00:00:00
+Data columns (total 11 columns):
+GOVT_USD_USA_1m     2326  non-null values
+GOVT_USD_USA_3m     2323  non-null values
+GOVT_USD_USA_6m     2326  non-null values
+GOVT_USD_USA_1y     2326  non-null values
+GOVT_USD_USA_2y     2326  non-null values
+GOVT_USD_USA_3y     2326  non-null values
+GOVT_USD_USA_5y     2326  non-null values
+GOVT_USD_USA_7y     2326  non-null values
+GOVT_USD_USA_10y    2326  non-null values
+GOVT_USD_USA_20y    2326  non-null values
+GOVT_USD_USA_30y    2050  non-null values
+dtypes: float64(11)

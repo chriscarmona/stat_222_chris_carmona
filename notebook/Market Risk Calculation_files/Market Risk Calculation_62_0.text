@@ -1,0 +1,23 @@
+AUD                   0.892200
+CAD                   1.064000
+CHF                   0.886600
+CNY                   6.061700
+EUR                   1.381600
+GBP                   1.652200
+JPY                 105.000000
+NOK                   6.065700
+NZD                   0.821900
+SEK                   6.412700
+SGD                   1.267100
+GOVT_USD_USA_1m       0.000100
+GOVT_USD_USA_3m       0.000700
+GOVT_USD_USA_6m       0.001000
+GOVT_USD_USA_1y       0.001300
+GOVT_USD_USA_2y       0.003902
+GOVT_USD_USA_3y       0.007724
+GOVT_USD_USA_5y       0.017348
+GOVT_USD_USA_7y       0.024643
+GOVT_USD_USA_10y      0.031104
+GOVT_USD_USA_20y      0.039064
+GOVT_USD_USA_30y      0.042263
+Name: 2013-12-30 00:00:00, dtype: float64

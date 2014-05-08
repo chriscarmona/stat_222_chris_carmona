@@ -1,0 +1,33 @@
+\BOOKMARK [0][-]{part.1}{I Introduction}{}% 1
+\BOOKMARK [1][-]{section.1}{GitHub project repository}{part.1}% 2
+\BOOKMARK [0][-]{part.2}{II Parameter definition}{}% 3
+\BOOKMARK [0][-]{part.3}{III Definition of Investment Portfolio}{}% 4
+\BOOKMARK [0][-]{part.4}{IV Risk Factors historical information}{}% 5
+\BOOKMARK [1][-]{section.2}{Historical Bond's Yield-to-Maturity Rates}{part.4}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Downloading data}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Reading data}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Transform yield rates to zero-coupon rates \(Bootstrap method\)}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Historical Foreign Exchange Rates}{part.4}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Downloading data}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Reading data}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Full Risk factors Information \(Merging yield rates and currencies\)}{part.4}% 13
+\BOOKMARK [0][-]{part.5}{V Descriptive Data bases}{}% 14
+\BOOKMARK [0][-]{part.6}{VI Risk factors scenario simulation}{}% 15
+\BOOKMARK [1][-]{section.5}{Calculation of Log-returns for Risk-factors}{part.6}% 16
+\BOOKMARK [1][-]{section.6}{Estimation of Risk factors Covariance matrix}{part.6}% 17
+\BOOKMARK [1][-]{section.7}{Function for simulation of risk factors}{part.6}% 18
+\BOOKMARK [1][-]{section.8}{Obtain Simulated scenarios}{part.6}% 19
+\BOOKMARK [0][-]{part.7}{VII Portfolio valuation}{}% 20
+\BOOKMARK [1][-]{section.9}{Function for portfolio valuation}{part.7}% 21
+\BOOKMARK [1][-]{section.10}{Valuation with base scenario}{part.7}% 22
+\BOOKMARK [1][-]{section.11}{Valuation with simulated scenarios}{part.7}% 23
+\BOOKMARK [0][-]{part.8}{VIII Profit and losses distribution}{}% 24
+\BOOKMARK [0][-]{part.9}{IX Value-at-Risk \(VaR\) estimation}{}% 25
+\BOOKMARK [0][-]{part.10}{X Back testing}{}% 26
+\BOOKMARK [1][-]{section.12}{For 2013}{part.10}% 27
+\BOOKMARK [2][-]{subsubsection*.1}{CAUTION!!! This code take several hours to be finished!!!}{section.12}% 28
+\BOOKMARK [0][-]{part.11}{XI Testing Suite}{}% 29
+\BOOKMARK [1][-]{section.13}{Test 1: Portfolio cashflows are known}{part.11}% 30
+\BOOKMARK [1][-]{section.14}{Test 2: Zero-coupon calculation}{part.11}% 31
+\BOOKMARK [1][-]{section.15}{Test 3-4: Instrument valuation}{part.11}% 32
+\BOOKMARK [1][-]{section.16}{Running the tests}{part.11}% 33

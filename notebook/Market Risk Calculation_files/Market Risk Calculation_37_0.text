@@ -1,0 +1,15 @@
+<class 'pandas.core.frame.DataFrame'>
+DatetimeIndex: 11290 entries, 1971-01-04 00:00:00 to 2014-04-11 00:00:00
+Data columns (total 11 columns):
+AUD    10856  non-null values
+CAD    10869  non-null values
+CHF    10863  non-null values
+CNY    8303  non-null values
+EUR    3842  non-null values
+GBP    10863  non-null values
+JPY    10857  non-null values
+NOK    10862  non-null values
+NZD    10847  non-null values
+SEK    10862  non-null values
+SGD    8362  non-null values
+dtypes: float64(11)
