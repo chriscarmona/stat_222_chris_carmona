@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 MAY 2014 12:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 MAY 2014 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2746,64 +2746,64 @@ Package xcolor Warning: Incompatible color definition on input line 2170.
 
 [22 <./Market Risk Calculation_files/Market Risk Calculation_77_1.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 2243.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 2211.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2243.
+Package xcolor Warning: Incompatible color definition on input line 2211.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 2243.
+(hyperref)                than one, level fixed on input line 2211.
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2252.
+(mdframed)             works with oneside mode on input line 2220.
 
-Overfull \hbox (133.42307pt too wide) in paragraph at lines 2265--2265
+Overfull \hbox (133.42307pt too wide) in paragraph at lines 2233--2233
 []        \T1/pcr/m/n/9.5 port_file []=[] []'[][]port_[][]'[] []+[] []str[](cal
 c_date[].[]year) []+[] []'[][]-[][]'[] []+[] []str[](calc_date[].[]month)[].[]z
 fill([]2[]) []+[] []'[][].csv[][]'[][] 
  []
 
 
-Overfull \hbox (99.22308pt too wide) in paragraph at lines 2266--2266
+Overfull \hbox (99.22308pt too wide) in paragraph at lines 2234--2234
 []        \T1/pcr/m/n/9.5 port []=[] pd[].[]read_csv( data_dir []+[] port_file 
 , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'[]
 ,[]'[][]NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (70.7231pt too wide) in paragraph at lines 2272--2272
+Overfull \hbox (70.7231pt too wide) in paragraph at lines 2240--2240
 []                                                 \T1/pcr/m/n/9.5 risk_factors
 _hist[]=[]risk_factors_hist,[] 
  []
 
 
-Overfull \hbox (87.82309pt too wide) in paragraph at lines 2273--2273
+Overfull \hbox (87.82309pt too wide) in paragraph at lines 2241--2241
 []                                                 \T1/pcr/m/n/9.5 cur_flip[]=[
 ]cur_flip, decay[]=[][]0.96[], seed[]=[][]0[] )[] 
  []
 
 
-Overfull \hbox (70.7231pt too wide) in paragraph at lines 2274--2274
+Overfull \hbox (70.7231pt too wide) in paragraph at lines 2242--2242
 []        \T1/pcr/m/n/9.5 port_mtm_base []=[] port_valuation(risk_factors[]=[]r
 isk_factors_hist[].[]ix[calc_date,],[] 
  []
 
 
-Overfull \hbox (122.02307pt too wide) in paragraph at lines 2284--2284
+Overfull \hbox (122.02307pt too wide) in paragraph at lines 2252--2252
 []        \T1/pcr/m/n/9.5 port_var_backtest[calc_date] []=[] np[].[]percentile(
  port_pl_sim[].[]sum(axis[]=[][]1[]), []100[][]-[]var_lever )[] 
  []
 
+Package mdframed Info: mdframed inside twoside mode but
+(mdframed)             works with oneside mode on input line 2271.
 [23]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2303.
+(mdframed)             works with oneside mode on input line 2307.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2339.
-Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2363.
+(mdframed)             works with oneside mode on input line 2331.
 
-Overfull \hbox (361.42294pt too wide) in paragraph at lines 2366--2366
+Overfull \hbox (361.42294pt too wide) in paragraph at lines 2334--2334
 []\T1/pcr/m/n/9.5 port_mtm_backtest []=[] pd[].[]read_csv( out_dir[]+[][]'[][]b
 acktesting_mtm.csv[][]'[] , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]n
 a[][]'[],[]'[][]NaN[][]'[],[]'[][]NULL[][]'[]] , header[]=[][]0[], names[]=[][[
@@ -2811,7 +2811,7 @@ a[][]'[],[]'[][]NaN[][]'[],[]'[][]NULL[][]'[]] , header[]=[][]0[], names[]=[][[
  []
 
 
-Overfull \hbox (361.42294pt too wide) in paragraph at lines 2367--2367
+Overfull \hbox (361.42294pt too wide) in paragraph at lines 2335--2335
 []\T1/pcr/m/n/9.5 port_var_backtest []=[] pd[].[]read_csv( out_dir[]+[][]'[][]b
 acktesting_var.csv[][]'[] , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]n
 a[][]'[],[]'[][]NaN[][]'[],[]'[][]NULL[][]'[]] , header[]=[][]0[], names[]=[][[
@@ -2819,128 +2819,547 @@ a[][]'[],[]'[][]NaN[][]'[],[]'[][]NULL[][]'[]] , header[]=[][]0[], names[]=[][[
  []
 
 
-Overfull \hbox (82.1231pt too wide) in paragraph at lines 2381--2381
+Overfull \hbox (82.1231pt too wide) in paragraph at lines 2349--2349
 []\T1/pcr/m/n/9.5 port_pl_backtest []=[] port_pl_backtest[].[]drop( pd[].[]to_d
 atetime( [ []'[][]2013-02-01[][]'[], []'[][]2013-03-01[][]'[],[] 
  []
 
 
-Overfull \hbox (156.22305pt too wide) in paragraph at lines 2382--2382
+Overfull \hbox (156.22305pt too wide) in paragraph at lines 2350--2350
 []                                                           []\T1/pcr/m/n/9.5 
 '[][]2013-04-01[][]'[], []'[][]2013-05-01[][]'[], []'[][]2013-06-03[][]'[],[] 
  []
 
 
-Overfull \hbox (156.22305pt too wide) in paragraph at lines 2383--2383
+Overfull \hbox (156.22305pt too wide) in paragraph at lines 2351--2351
 []                                                           []\T1/pcr/m/n/9.5 
 '[][]2013-07-01[][]'[], []'[][]2013-08-01[][]'[], []'[][]2013-09-03[][]'[],[] 
  []
 
 
-Overfull \hbox (179.02304pt too wide) in paragraph at lines 2384--2384
+Overfull \hbox (179.02304pt too wide) in paragraph at lines 2352--2352
 []                                                           []\T1/pcr/m/n/9.5 
 '[][]2013-10-01[][]'[], []'[][]2013-11-01[][]'[], []'[][]2013-12-02[][]'[]] ) )
 [] 
  []
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2403.
-[24]
+(mdframed)             works with oneside mode on input line 2371.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2430.
+(mdframed)             works with oneside mode on input line 2398.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2436.
+(mdframed)             works with oneside mode on input line 2404.
 
-<Market Risk Calculation_files/Market Risk Calculation_85_1.png, id=304, 394.47
+<Market Risk Calculation_files/Market Risk Calculation_85_1.png, id=300, 394.47
 375pt x 272.01625pt>
 File: Market Risk Calculation_files/Market Risk Calculation_85_1.png Graphic fi
 le (type png)
 
 <use Market Risk Calculation_files/Market Risk Calculation_85_1.png>
 Package pdftex.def Info: Market Risk Calculation_files/Market Risk Calculation_
-85_1.png used on input line 2439.
+85_1.png used on input line 2407.
 (pdftex.def)             Requested size: 394.47278pt x 272.01558pt.
 
+Overfull \vbox (15.93466pt too high) detected at line 2411
+ []
 
-Package xcolor Warning: Incompatible color definition on input line 2468.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 2411.
+
+Overfull \vbox (16.93466pt too high) detected at line 2411
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 2468.
+Overfull \vbox (17.93466pt too high) detected at line 2411
+ []
 
-[25 <./Market Risk Calculation_files/Market Risk Calculation_85_1.png>]
+
+Overfull \vbox (18.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (19.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (20.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (21.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (22.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (23.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (24.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (25.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (26.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (27.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (28.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (29.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (30.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (31.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (32.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (33.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (34.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (35.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (36.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (37.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (38.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (39.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (40.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (41.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (42.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (43.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (44.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (45.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (46.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (47.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (48.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (49.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (50.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (51.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (52.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (53.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (54.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (55.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (56.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (57.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (58.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (59.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (60.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (61.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (62.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (63.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (64.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (65.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (66.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (67.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (68.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (69.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (70.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (71.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (72.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (73.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (74.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (75.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (76.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (77.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (78.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (79.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (80.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (81.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (82.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (83.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (84.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (85.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (86.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (87.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (88.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (89.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (90.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (91.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (92.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (93.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (94.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (95.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (96.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (97.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (98.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (99.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (100.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (101.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (102.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (103.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (104.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (105.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (106.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (107.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (108.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (109.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (110.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (111.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (112.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (113.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (114.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (115.93466pt too high) detected at line 2411
+ []
+
+
+Overfull \vbox (116.93466pt too high) detected at line 2411
+ []
+
+
+Package mdframed Warning: correct box splittet fails
+ It seems you are using a non splittable contents
+(mdframed)                 on input line 2411.
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 2411.
+[24]
+
+Package xcolor Warning: Incompatible color definition on input line 2436.
+
+
+Package xcolor Warning: Incompatible color definition on input line 2436.
+
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2477.
+(mdframed)             works with oneside mode on input line 2445.
 
-Overfull \hbox (150.52306pt too wide) in paragraph at lines 2494--2494
+Overfull \hbox (150.52306pt too wide) in paragraph at lines 2462--2462
 []\T1/pcr/m/n/9.5 data_dir []=[] []'[][]/Users/Chris/Documents/26 UC Berkeley/0
 3 Courses/STAT 222/stat_222_chris_carmona/data/[][]'[][] 
  []
 
 
-Overfull \hbox (156.22305pt too wide) in paragraph at lines 2495--2495
+Overfull \hbox (156.22305pt too wide) in paragraph at lines 2463--2463
 []\T1/pcr/m/n/9.5 out_dir []=[] []'[][]/Users/Chris/Documents/26 UC Berkeley/03
  Courses/STAT 222/stat_222_chris_carmona/output/[][]'[][] 
  []
 
 
-Overfull \hbox (53.62311pt too wide) in paragraph at lines 2501--2501
+Overfull \hbox (53.62311pt too wide) in paragraph at lines 2469--2469
 []\T1/pcr/m/n/9.5 port []=[] pd[].[]read_csv( data_dir []+[] port_file , na_val
 ues[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'[],[]'[][]
 NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (110.62308pt too wide) in paragraph at lines 2507--2507
+Overfull \hbox (110.62308pt too wide) in paragraph at lines 2475--2475
 []\T1/pcr/m/n/9.5 cshf_info []=[] pd[].[]read_csv( data_dir []+[] cshf_info_fil
 e , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'
 [],[]'[][]NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (87.82309pt too wide) in paragraph at lines 2516--2516
+Overfull \hbox (87.82309pt too wide) in paragraph at lines 2484--2484
 []    \T1/pcr/m/n/9.5 instr_port_defined []=[] [ (i []\T1/pcr/b/n/9.5 in[] \T1/
 pcr/m/n/9.5 cshf_info[].[]unstack()[].[]index[].[]values) []\T1/pcr/b/n/9.5 for
 [] \T1/pcr/m/n/9.5 i []\T1/pcr/b/n/9.5 in[] \T1/pcr/m/n/9.5 instr_port ][] 
  []
 
+[25 <./Market Risk Calculation_files/Market Risk Calculation_85_1.png>]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2541.
-
-Package xcolor Warning: Incompatible color definition on input line 2550.
+(mdframed)             works with oneside mode on input line 2509.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2550.
+Package xcolor Warning: Incompatible color definition on input line 2518.
+
+
+Package xcolor Warning: Incompatible color definition on input line 2518.
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2559.
+(mdframed)             works with oneside mode on input line 2527.
 
-Overfull \hbox (150.52306pt too wide) in paragraph at lines 2576--2576
+Overfull \hbox (150.52306pt too wide) in paragraph at lines 2544--2544
 []\T1/pcr/m/n/9.5 data_dir []=[] []'[][]/Users/Chris/Documents/26 UC Berkeley/0
 3 Courses/STAT 222/stat_222_chris_carmona/data/[][]'[][] 
  []
 
 
-Overfull \hbox (156.22305pt too wide) in paragraph at lines 2577--2577
+Overfull \hbox (156.22305pt too wide) in paragraph at lines 2545--2545
 []\T1/pcr/m/n/9.5 out_dir []=[] []'[][]/Users/Chris/Documents/26 UC Berkeley/03
  Courses/STAT 222/stat_222_chris_carmona/output/[][]'[][] 
  []
 
 
-Overfull \hbox (53.62311pt too wide) in paragraph at lines 2583--2583
+Overfull \hbox (53.62311pt too wide) in paragraph at lines 2551--2551
 []\T1/pcr/m/n/9.5 port []=[] pd[].[]read_csv( data_dir []+[] port_file , na_val
 ues[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'[],[]'[][]
 NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (110.62308pt too wide) in paragraph at lines 2589--2589
+Overfull \hbox (110.62308pt too wide) in paragraph at lines 2557--2557
 []\T1/pcr/m/n/9.5 cshf_info []=[] pd[].[]read_csv( data_dir []+[] cshf_info_fil
 e , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'
 [],[]'[][]NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (617.9228pt too wide) in paragraph at lines 2620--2620
+Overfull \hbox (617.9228pt too wide) in paragraph at lines 2588--2588
 []        \T1/pcr/m/n/9.5 zero_new[node_i] []=[] []-[] np[].[]log( ([]1[] []-[]
  cpn_i []*[] np[].[]exp([]-[]nodes_new[ nodes_new[]<[]node_i []*[] nodes_coupon
  ] []*[] zero_new[ nodes_new[]<[]node_i []*[] nodes_coupon ])[].[]sum())[]/[]([
@@ -2948,13 +3367,13 @@ Overfull \hbox (617.9228pt too wide) in paragraph at lines 2620--2620
  []
 
 
-Overfull \hbox (133.42307pt too wide) in paragraph at lines 2628--2628
+Overfull \hbox (133.42307pt too wide) in paragraph at lines 2596--2596
 []    \T1/pcr/m/n/9.5 zero_curve_test []=[] zero_from_yield_bootstrap( ytm_curv
 e[]=[]ytm_curve_test[].[]values , nodes[]=[]nodes )[] 
  []
 
 
-Overfull \hbox (133.42307pt too wide) in paragraph at lines 2629--2629
+Overfull \hbox (133.42307pt too wide) in paragraph at lines 2597--2597
 []    \T1/pcr/m/n/9.5 zero_curve_test []=[] np[].[]array( [ []round[](rate, []2
 []) []\T1/pcr/b/n/9.5 for[] \T1/pcr/m/n/9.5 rate []\T1/pcr/b/n/9.5 in[] \T1/pcr
 /m/n/9.5 zero_curve_test ],dtype[]=[]np[].[]float64)[] 
@@ -2962,52 +3381,51 @@ Overfull \hbox (133.42307pt too wide) in paragraph at lines 2629--2629
 
 [26]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2654.
+(mdframed)             works with oneside mode on input line 2622.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2663.
+Package xcolor Warning: Incompatible color definition on input line 2631.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2663.
+Package xcolor Warning: Incompatible color definition on input line 2631.
 
-[27]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2672.
+(mdframed)             works with oneside mode on input line 2640.
 
-Overfull \hbox (150.52306pt too wide) in paragraph at lines 2689--2689
+Overfull \hbox (150.52306pt too wide) in paragraph at lines 2657--2657
 []\T1/pcr/m/n/9.5 data_dir []=[] []'[][]/Users/Chris/Documents/26 UC Berkeley/0
 3 Courses/STAT 222/stat_222_chris_carmona/data/[][]'[][] 
  []
 
 
-Overfull \hbox (156.22305pt too wide) in paragraph at lines 2690--2690
+Overfull \hbox (156.22305pt too wide) in paragraph at lines 2658--2658
 []\T1/pcr/m/n/9.5 out_dir []=[] []'[][]/Users/Chris/Documents/26 UC Berkeley/03
  Courses/STAT 222/stat_222_chris_carmona/output/[][]'[][] 
  []
 
 
-Overfull \hbox (53.62311pt too wide) in paragraph at lines 2696--2696
+Overfull \hbox (53.62311pt too wide) in paragraph at lines 2664--2664
 []\T1/pcr/m/n/9.5 port []=[] pd[].[]read_csv( data_dir []+[] port_file , na_val
 ues[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'[],[]'[][]
 NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (110.62308pt too wide) in paragraph at lines 2702--2702
+Overfull \hbox (110.62308pt too wide) in paragraph at lines 2670--2670
 []\T1/pcr/m/n/9.5 cshf_info []=[] pd[].[]read_csv( data_dir []+[] cshf_info_fil
 e , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][]'
 [],[]'[][]NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (122.02307pt too wide) in paragraph at lines 2708--2708
+Overfull \hbox (122.02307pt too wide) in paragraph at lines 2676--2676
 []\T1/pcr/m/n/9.5 instr_info []=[] pd[].[]read_csv( data_dir []+[] instr_info_f
 ile , na_values[]=[][[]'[][]'[],[]'[][]NA[][]'[],[]'[][]na[][]'[],[]'[][]NaN[][
 ]'[],[]'[][]NULL[][]'[]] )[] 
  []
 
 
-Overfull \hbox (99.22308pt too wide) in paragraph at lines 2710--2710
+Overfull \hbox (99.22308pt too wide) in paragraph at lines 2678--2678
 []\T1/pcr/m/n/9.5 currencies []=[] [[]'[][]AUD[][]'[], []'[][]CAD[][]'[], []'[]
 []CHF[][]'[], []'[][]CLP[][]'[], []'[][]EUR[][]'[], []'[][]GBP[][]'[], []'[][]J
 PY[][]'[], []'[][]NOK[][]'[], []'[][]NZD[][]'[], []'[][]SEK[][]'[], []'[][]SGD[
@@ -3015,155 +3433,156 @@ PY[][]'[], []'[][]NOK[][]'[], []'[][]NZD[][]'[], []'[][]SEK[][]'[], []'[][]SGD[
  []
 
 
-Overfull \hbox (8.02313pt too wide) in paragraph at lines 2718--2718
+Overfull \hbox (8.02313pt too wide) in paragraph at lines 2686--2686
 []\T1/pcr/m/n/9.5 nodes []=[] np[].[]append(nodes, np[].[]array([[]1[],[]2[],[]
 3[],[]5[],[]7[],[]10[],[]20[],[]30[]],dtype[]=[]np[].[]float64) )[] 
  []
 
 
-Overfull \hbox (8.02313pt too wide) in paragraph at lines 2724--2724
+Overfull \hbox (8.02313pt too wide) in paragraph at lines 2692--2692
 [][]\T1/pcr/b/n/9.5 def[] []\T1/pcr/m/n/9.5 port_valuation[]( port, calc_date, 
 risk_factors, instr_info, cshf_info):[] 
  []
 
 
-Overfull \hbox (104.92308pt too wide) in paragraph at lines 2733--2733
+Overfull \hbox (104.92308pt too wide) in paragraph at lines 2701--2701
 []    \T1/pcr/m/n/9.5 ccy_cshf []=[] pd[].[]DataFrame( ccy_cshf[].[]values, ind
 ex[]=[]ccy_cshf[].[]index, columns[]=[][calc_date] )[].[]T[] 
  []
 
 
-Overfull \hbox (133.42307pt too wide) in paragraph at lines 2738--2738
+Overfull \hbox (133.42307pt too wide) in paragraph at lines 2706--2706
 []    \T1/pcr/m/n/9.5 port_cshf []=[] pd[].[]merge( ccy_cshf, bonds_cshf, left_
 index[]=[][]True[], right_index[]=[][]True[], how[]=[][]'[][]outer[][]'[] )[] 
  []
 
 
-Overfull \hbox (93.52309pt too wide) in paragraph at lines 2743--2743
+Overfull \hbox (93.52309pt too wide) in paragraph at lines 2711--2711
 []                         \T1/pcr/m/n/9.5 index[]=[][ calc_date []+[] pd[].[]D
 ateOffset(days[]=[]x[]*[][]365[]) []\T1/pcr/b/n/9.5 for[] \T1/pcr/m/n/9.5 x []\
 T1/pcr/b/n/9.5 in[] \T1/pcr/m/n/9.5 nodes ] )[] 
  []
 
 
-Overfull \hbox (93.52309pt too wide) in paragraph at lines 2746--2746
+Overfull \hbox (93.52309pt too wide) in paragraph at lines 2714--2714
 []    \T1/pcr/m/n/9.5 discount []=[] discount[].[]reindex( index[]=[] discount[
 ].[]index[].[]append(port_cshf[].[]index)[].[]unique() )[] 
  []
 
 
-Overfull \hbox (116.32307pt too wide) in paragraph at lines 2755--2755
+Overfull \hbox (116.32307pt too wide) in paragraph at lines 2723--2723
 []    \T1/pcr/m/n/9.5 ccy_instr []=[] instr_info[].[]ix[ instr_info[].[]id_inst
 r[].[]isin(port[].[]index), [[]'[][]id_instr[][]'[],[]'[][]currency[][]'[]]][] 
 
  []
 
 
-Overfull \hbox (47.92311pt too wide) in paragraph at lines 2763--2763
+Overfull \hbox (47.92311pt too wide) in paragraph at lines 2731--2731
 []            \T1/pcr/m/n/9.5 port_cshf_pv[instr_ccy] []=[] port_cshf_pv[instr_
 ccy] []/[] risk_factors[ccy][] 
  []
 
 
-Overfull \hbox (47.92311pt too wide) in paragraph at lines 2765--2765
+Overfull \hbox (47.92311pt too wide) in paragraph at lines 2733--2733
 []            \T1/pcr/m/n/9.5 port_cshf_pv[instr_ccy] []=[] port_cshf_pv[instr_
 ccy] []*[] risk_factors[ccy][] 
  []
 
 
-Overfull \hbox (87.82309pt too wide) in paragraph at lines 2778--2778
+Overfull \hbox (87.82309pt too wide) in paragraph at lines 2746--2746
 []                                   \T1/pcr/m/n/9.5 calc_date[]=[]datetime[].[
 ]strptime([]'[][]2013-12-30[][]'[],[]'[][]%[][]Y-[][]%[][]m-[][]\T1/pcr/b/n/9.5
  %d[][]\T1/pcr/m/n/9.5 '[]),[] 
  []
 
 
-Overfull \hbox (139.12306pt too wide) in paragraph at lines 2782--2782
+Overfull \hbox (139.12306pt too wide) in paragraph at lines 2750--2750
 []    \T1/pcr/m/n/9.5 result []=[] []all[](port_mtm_base[cur_flip] []==[] []100
 0[][]/[][]1.5[]) []\T1/pcr/b/n/9.5 and[] []\T1/pcr/m/n/9.5 all[](port_mtm_base[
 cur_usd] []==[] []1000[][]*[][]1.5[])[] 
  []
 
 
-Overfull \hbox (87.82309pt too wide) in paragraph at lines 2795--2795
+Overfull \hbox (87.82309pt too wide) in paragraph at lines 2763--2763
 []                                   \T1/pcr/m/n/9.5 calc_date[]=[]datetime[].[
 ]strptime([]'[][]2013-12-30[][]'[],[]'[][]%[][]Y-[][]%[][]m-[][]\T1/pcr/b/n/9.5
  %d[][]\T1/pcr/m/n/9.5 '[]),[] 
  []
 
 
-Overfull \hbox (179.02304pt too wide) in paragraph at lines 2800--2800
+Overfull \hbox (179.02304pt too wide) in paragraph at lines 2768--2768
 []    \T1/pcr/m/n/9.5 result []=[] []all[]( np[].[]array( [[]round[](i,[]4[]) [
 ]\T1/pcr/b/n/9.5 for[] \T1/pcr/m/n/9.5 i []\T1/pcr/b/n/9.5 in[] \T1/pcr/m/n/9.5
  port_mtm_base] ) []==[]  np[].[]array( [[]999.8060[], []999.7261[]] ) )[] 
  []
 
-[28] [29]
+[27] [28]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2821.
+(mdframed)             works with oneside mode on input line 2789.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2830.
+Package xcolor Warning: Incompatible color definition on input line 2798.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2830.
+Package xcolor Warning: Incompatible color definition on input line 2798.
 
+[29]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2839.
+(mdframed)             works with oneside mode on input line 2807.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2861.
+(mdframed)             works with oneside mode on input line 2829.
 
-Overfull \hbox (4.02335pt too wide) in paragraph at lines 2865--2865
+Overfull \hbox (4.02335pt too wide) in paragraph at lines 2833--2833
 []\T1/pcr/m/n/10 --------------------------------------------------------------
 --------[] 
  []
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2884.
+(mdframed)             works with oneside mode on input line 2852.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2906.
+(mdframed)             works with oneside mode on input line 2874.
 
-Overfull \hbox (4.02335pt too wide) in paragraph at lines 2910--2910
+Overfull \hbox (4.02335pt too wide) in paragraph at lines 2878--2878
 []\T1/pcr/m/n/10 --------------------------------------------------------------
 --------[] 
  []
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2929.
+(mdframed)             works with oneside mode on input line 2897.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2951.
+(mdframed)             works with oneside mode on input line 2919.
 
-Overfull \hbox (4.02335pt too wide) in paragraph at lines 2956--2956
+Overfull \hbox (4.02335pt too wide) in paragraph at lines 2924--2924
 []\T1/pcr/m/n/10 use DataFrame.<op> to explicitly broadcast arithmetic operatio
 ns along[] 
  []
 
 
-Overfull \hbox (4.02335pt too wide) in paragraph at lines 2962--2962
+Overfull \hbox (4.02335pt too wide) in paragraph at lines 2930--2930
 []\T1/pcr/m/n/10 --------------------------------------------------------------
 --------[] 
  []
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 2981.
+(mdframed)             works with oneside mode on input line 2949.
 No file "Market Risk Calculation".ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2999.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2967.
 [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2999.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2967.
  (./Market Risk Calculation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2999.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2999.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2967.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2967.
 
 Package rerunfilecheck Info: File `"Market Risk Calculation".out' has not chang
 ed.
 (rerunfilecheck)             Checksum: E989BE43DE23E198D11C8B2654C93965;2350.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2999.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2967.
  ) 
 Here is how much of TeX's memory you used:
- 26646 strings out of 493315
- 467569 string characters out of 6137904
- 634341 words of memory out of 5000000
- 29429 multiletter control sequences out of 15000+600000
+ 26645 strings out of 493315
+ 467541 string characters out of 6137904
+ 652175 words of memory out of 5000000
+ 29428 multiletter control sequences out of 15000+600000
  52737 words of font info for 65 fonts, out of 8000000 for 9000
  958 hyphenation exceptions out of 8191
  56i,10n,78p,944b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3181,7 +3600,7 @@ st/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb>
-Output written on "Market Risk Calculation.pdf" (30 pages, 408551 bytes).
+Output written on "Market Risk Calculation.pdf" (30 pages, 409198 bytes).
 PDF statistics:
  400 PDF objects out of 1000 (max. 8388607)
  322 compressed objects within 4 object streams
